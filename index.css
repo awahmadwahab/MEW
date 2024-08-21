@@ -21,6 +21,7 @@ body {
     border: none;
     cursor: pointer;
     display: none; /* Show on smaller screens */
+    
 }
 
 /* Navigation List Styling */
@@ -223,11 +224,7 @@ a {
     font-size: 30px;
 }
 
-#container{
-    display: flex;
-    justify-content: space-between;
-   
-}
+
 #contact-line
 {
     border: 0;
@@ -262,11 +259,13 @@ a {
     {
         transform: scale(1);
     }
+    
 }
+
+
 #details
 {
-    justify-content: center;
-    margin: 9% auto;
+    margin: 5% auto;
     gap: 10%;
     padding: 3%;
     background-color: #E9F1FA;
@@ -292,16 +291,15 @@ a {
     gap: 10%;
     margin: 5%;
     background-color: #E9F1FA;
-    animation: fade linear;
+    animation: fade ease-in;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 
 }
 
 #map
 {
-    margin:3% 3%;
-    border-radius: 10px;
+  
    
 }
 #map:hover
@@ -342,15 +340,14 @@ footer i:hover
 /* Media Queries */
 @media (max-width: 768px) {
     .nav_list {
-        margin: 0 10%;
+        margin: 5% 50%;
         display: none;
         transform: translateX(100%);
          flex-direction: column;
          padding: 5%;
          gap: 5%;
          font-size: 20px;
-         font-weight: normal;
-
+         font-weight: normal; 
     }
     .nav_list.active {
         display: flex;
@@ -365,11 +362,13 @@ footer i:hover
         box-shadow: 0 0 2px 5px #002349;
         z-index: 1;
     }
-    .hamburger {
+    .nav-toggle {
         display: block;
         font-size: 2rem;
         cursor: pointer;
+        float: right;
     }
+    
     #home {
         flex-direction: column;
         margin: 20px;
@@ -381,11 +380,15 @@ footer i:hover
     #home-text h4 {
         font-size: 1rem;
     }
+    #about{
+        box-sizing: border-box;
+ 
+        }
     #about-text {
         width: 80%;
     }
     #details {
-        width: 90%;
+        width: 80%;
     }
     #icon-g {
         width: 90%;
@@ -393,7 +396,7 @@ footer i:hover
     #contact{
         width: 100%;
     }
-       #map 
+    #map 
    {
      width: 100%;
    }
