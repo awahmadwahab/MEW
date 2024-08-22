@@ -14,9 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const aboutsection=document.getElementById("about")
         aboutsection.scrollIntoView({behavior:'smooth'})
     });
-    document.querySelector(".contact_btn").addEventListener('click', function() {
+    document.querySelector(".contact_btn ").addEventListener('click', function() {
         const contactSection = document.getElementById("contact");
         contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+    document.querySelector("#contact-btn ").addEventListener('click', function() {
+        const contactSection = document.getElementById("contact");
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById("services-btn").addEventListener('click',function(){
+        const servicessection=document.getElementById("services")
+        servicessection.scrollIntoView({behavior:'smooth'})
     });
 });
 

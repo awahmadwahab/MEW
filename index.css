@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient( #E9F1FA, #002349);
+    background: linear-gradient( #E9F1FA, #002349 70%);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -108,7 +108,7 @@ a {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: white; }
+    50% { border-color:transparent; }
 }
 
 #home-text h4 {
@@ -117,7 +117,7 @@ a {
     border-right: 2px solid #002349;
     white-space: nowrap;
     overflow: hidden;
-    width: 0;
+    ;
     font-size: 1.2rem;
     font-weight: bold;
     color: #002349;
@@ -208,6 +208,74 @@ a {
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+
+
+/*  Services Section */
+#services
+{
+    background: radial-gradient(#002349, black);
+    text-align: center;
+    color: #E9F1FA;
+    height: 100%;
+    padding: 10px;
+    width: auto;
+}
+#services-text
+{   
+    padding: 10px;
+    height: fit-content;
+    font-size: 16px;
+    line-height: 1.3;
+    width: 70%; 
+    margin: 3% auto;
+    border-radius: 10px;
+    box-shadow:  0 0 8px 1px white;
+    animation: fade ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+#services-text:hover
+{
+    box-shadow:  0 0 15px 4px white;
+}
+
+#screw-imgs
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 5%;
+}
+#services-text  img
+{   
+   
+    transition: transform 0.3s;
+    margin:2% 5%;
+}
+#services-text img:hover
+{   
+    transform: rotate(45deg) scale(1.2);
+    transition: transform 0.3s;
+}
+#load-btn
+{
+    font-size: 20px;
+    background-color:inherit;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+   margin-bottom: 2%;
+    cursor: pointer;
+    transition: color 0.4s, background-color 0.3s;
+    color: white;
+}
+#load-btn:hover
+{
+    background-color: white;
+    color: #002349;
+    border: 3px solid white;
+}
+
 
 /* ---- Contact Section ---- */
 
@@ -337,7 +405,7 @@ footer i:hover
 /* Media Queries */
 @media (max-width: 768px)
 {
-    #home image;
+    
     #muawia
     {
         font-size: 50px;
