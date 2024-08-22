@@ -12,7 +12,9 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 20px auto;
+    display: block;
+
 }
 
 /* Navigation Toggle Button */
@@ -419,10 +421,63 @@ footer i:hover
     color:#c2c2c2;
 }
 
+
+
+
+
+#screw-section
+{
+    text-align: center;
+    margin: 10%;
+
+}
+#screw-section h1
+{
+    color: #E9F1FA;
+    background-color: #002349;
+    border-radius: 5px;
+}
+
+.size-div {
+    margin-top: 2%;
+    padding: 10px; /* Padding inside the div */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #002349;
+    color: #E9F1FA;
+}
+
+.size-list {
+    display: block;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px;  border: 2px solid black;/* Padding inside the list */
+    background-color: #E9F1FA;
+    color: #002349;
+    border: none;
+    transition: transform 0.3s;
+}
+.size-list:hover
+{
+    transition: transform 0.3s;
+    transform: scale(1.02);
+    box-shadow: 0 0 7px 2px white;
+}
+
+
+
 /* Media Queries */
 @media (max-width: 768px)
 {
-    
+    .logo
+    {
+       width: 15%;
+       padding-left: 10%;
+       display: block;
+   
+       padding: 5%;
+       box-shadow: 2px 2px 2px #002349;
+    }
+   
     #muawia
     {
         font-size: 50px;
@@ -465,7 +520,7 @@ footer i:hover
         margin: 20px;
     }
     #home img {
-        margin-top: 20%;
+        margin-top:10%;
         width: 50%;
         height: 50%;
     }
@@ -506,4 +561,9 @@ footer i:hover
         display: block;
     }
     
+    #services-text  img
+    {
+        width: 70px;
+        height: 70px;
+    }
 }
