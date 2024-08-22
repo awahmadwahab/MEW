@@ -72,11 +72,14 @@ a {
     margin: 5% 30%;
 }
 
+
 #home img {
     width:39%;
     height: 39%;
     transition: opacity 0.3s ease;
     transition: transform 0.5s ease;
+    animation: rotate 5s linear infinite;
+
 }
 #home img:hover 
 {
@@ -244,11 +247,10 @@ a {
     display: flex;
     justify-content: center;
     gap: 10%;
-    margin: 5%;
+    margin: 8% 0 3% 0;
 }
 #services-text  img
 {   
-   
     transition: transform 0.3s;
     margin:2% 5%;
 }
@@ -257,23 +259,38 @@ a {
     transform: rotate(45deg) scale(1.2);
     transition: transform 0.3s;
 }
-#load-btn
+.screw-label p
 {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-top: 30%;
+
+}
+
+#load-btn 
+{
+    border: none;
+    text-decoration: none;
+    color: #002349;
     font-size: 20px;
     background-color:inherit;
     padding: 5px 10px;
     border-radius: 5px;
-    border: 2px solid white;
+    font-weight: bold;
    margin-bottom: 2%;
     cursor: pointer;
     transition: color 0.4s, background-color 0.3s;
     color: white;
 }
-#load-btn:hover
+
+#load-btn a:hover
 {
-    background-color: white;
-    color: #002349;
-    border: 3px solid white;
+    text-decoration: underline;
+}
+#load-btn a:active
+{
+    color: #c2c2c2
 }
 
 
