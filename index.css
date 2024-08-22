@@ -487,7 +487,7 @@ footer i:hover
         font-size: 30px;
     }
     .nav_list {
-        margin: 5% 50%;
+        margin: 2% 50%;
         display: none;
         transform: translateX(100%);
          flex-direction: column;
@@ -514,6 +514,8 @@ footer i:hover
         font-size: 2rem;
         cursor: pointer;
         float: right;
+        padding-right: 10%;
+        margin-top: -20%;
     }
     #home {
         flex-direction: column;
